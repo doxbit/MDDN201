@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Your Website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<p>Notice how this content isn't centered. To center it we need to wrap it</p>
+
+	<section>
+		<h1>Here is some centered content, by wrapping it with a section tag</h1>
+		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque est, egestas tristique quam nec, efficitur efficitur massa. Aenean in faucibus felis. Mauris ut ligula vestibulum, varius metus vitae, maximus orci. </em></p>
+
+		<p>Notice how if you change the width of your browser it stays in the center</p>
+	</section>
+
+	<section>
+		<p>This is a simple nav bar, which is full width of the page</p>
+	</section>
+	<nav>
+		<h3>A nice navigation bar</h3>
+		<a href="#one">Link 1</a>
+		<a href="#two">Link 2</a>
+		<a href="#three">Link 3</a>
+	</nav>
+
+	<section id="one">
+		<p><strong>Content number one</strong></p>
+		<p>By setting an a tag's href to "#one", it will link to a html element with the id of "one". <a href="https://css-tricks.com/hash-tag-links-padding/">More info about that here</a></p>
+	</section>
+
+	<section id="two">
+		<p><strong>Content number 2</strong></p>
+	</section>
+
+	<section id="three">
+		<p><strong>Content number 3</strong></p>
+	</section>
+
+	<header>
+		<section>
+			<h1>Networks of Wellington</h1>
+			<p>There is also a section tag inside it to center this content</p>
+		</section>
+	</header>
+
+	
+
+	<section>
+		<h3>Grids</h3>
+
+		<p>Use grids to divide up or layout content. For example, putting an image on the left, and lots to text on the right</p>
+
+		<p>I've added a 'show' class so you can see where the grids are. Use chrome's web inspector tools to take a closer look</p>
+
+
+		<div class="g-row show"> <!--first wrap all grid cells in a g-row-->
+			<div class="g-50 show">
+				50% width .g-50
+			</div>
+			<div class="g-50 show">
+				50% width .g-50
+			</div>
+
+			<div class="g-30 show">
+				30% width .g-30
+			</div>
+
+			<div class="g-70 show">
+				70% width .g-70
+			</div>
+		</div>
+
+		<p>The other cool things about grids, is that 50% width means 50% of the div's <em>parent</em>. This means you can put cells in cells to get infinitly smaller sizes. The possiblities are endless!</p>
+
+		<div class="g-row show"> <!--first wrap all grid cells in a g-row-->
+			<div class="g-50 show">
+				<div class="g-50 show">
+					<div class="g-50 show">
+						50%
+					</div>
+					<div class="g-50 show">
+						50%
+					</div>
+				</div>
+				<div class="g-50 show">
+					50%
+				</div>
+			</div>
+			<div class="g-50 show">
+				50%
+			</div>
+		</div>
+
+		<p>Here's a simple page using all of these elements</p>
+	</section>
+
+	<header>
+		<section>
+			<h1>Networks of the Home.</h1>
+			<p>Physical expressions of internet infrastructure around the home.</p>
+		</section>
+	</header>
+
+	<section>
+		<div class="g-row">
+			<div class="g-30">
+				<img src="img/home_netwrk3.png">
+			</div>
+			<div class="g-70 padded">
+				<h3>Ethernet Connection to Computer</h3>
+				<p>This is the cable providing the main desktop computer with an internet connection. It is both faster and more reliable that a wireless WiFi connection.</p>
+			</div>
+		</div>
+
+		<div class="g-row">
+			<div class="g-30">
+				<img src="img/home_netwrk2.png">
+			</div>
+			<div class="g-70 padded">
+				<h3>Vodaphone Router</h3>
+				<p>This is where the desktop ethernet cable connects, providing a reliable internet connection. It also provides a wireless WiFi solution for mobile devices.</p>
+			</div>
+		</div>
+
+		<div class="g-row">
+			<div class="g-30">
+				<img src="img/home_netwrk1.png">
+			</div>
+			<div class="g-70 padded">
+				<h3>Vodafone Modem</h3>
+				<p>Allows for the outdoor fibre line to be acessable from consumer devices. recieves an input from the street box, and passes this to the router for the consumer.</p>
+			</div>
+		</div>
+
+		<div class="g-row">
+			<div class="g-30">
+				<img src="img/home_netwrk5.png">
+			</div>
+			<div class="g-70 padded">
+				<h3>Street Fibre Box</h3>
+				<p>This is where the street fibre cable is connected to the individual household, allowing for that house to revieve an internet connection. All internal networking equipment begins at this box.</p>
+			</div>
+		</div>
+	</section>
+
+	<header>
+		<section>
+			<h1>Networks of the Intersection.</h1>
+			<p>Physical expressions of internet infrasstructure in a regular street environment.</p>
+		</section>
+	</header>
+
+	<section>
+		<div class="g-row">
+			<div class="g-30">
+				<img src="img/inter_netwrk1.png">
+			</div>
+			<div class="g-70 padded">
+				<h3>Traffic Control Box</h3>
+				<p>Present on all traffic lights, this box seems to be intergral to the traffic system running smoothly.</p>
+			</div>
+		</div>
+
+		<div class="g-row">
+			<div class="g-30">
+				<img src="img/inter_netwrk4.png">
+			</div>
+			<div class="g-70 padded">
+				<h3>Larger Networking Box on Traffic Light</h3>
+				<p>This box was present on only a select few traffic lights, and seemed signifigantly larger than the smaller metal boxes above. There was usually one of these larger boxes at each intersection, rather than one per light.</p>
+			</div>
+		</div>
+
+		<div class="g-row">
+			<div class="g-30">
+				<img src="img/inter_netwrk3.png">
+			</div>
+			<div class="g-70 padded">
+				<h3>Traffic Light Cap Piece</h3>
+				<p>All traffic lights seem to feed all cables into this top cap piece. This could be a way to provide a weather sealed place to have wire connections to the control system.</p>
+			</div>
+		</div>
+
+		<div class="g-row">
+			<div class="g-30">
+				<img src="img/inter_netwrk5.png">
+			</div>
+			<div class="g-70 padded">
+				<h3>TelstraSaturn operated manhole cover</h3>
+				<p>These are the largest circular covers present in Wellington - often with multiple near each other. They are one of the largest companies responsible for maintaining physical infrasture in Wellington alongside Downer Connect.</p>
+			</div>
+		</div>
+
+		<div class="g-row">
+			<div class="g-30">
+				<img src="img/inter_netwrk6.png">
+			</div>
+			<div class="g-70 padded">
+				<h3>Telecom operated manhole cover</h3>
+				<p>These covers often were on sidewalks, rather than in streets like the Testra ones above. They are aso much larger, and hence made of concrete rather than metal. They would now be operated by Spark, now that Telecom has closed.</p>
+			</div>
+		</div>
+	</section>
+
+<header>
+		<section>
+			<h1>Networks of the University.</h1>
+			<p>Physical expressions of the connected infrastructure inside the school environment.</p>
+		</section>
+	</header>
+
+	<section>
+		<div class="g-row">
+			<div class="g-30">
+				<img src="img/home_netwrk3.png">
+			</div>
+			<div class="g-70 padded">
+				<h3>Ethernet Connection to Computer</h3>
+				<p>This is the cable providing the main desktop computer with an internet connection. It is both faster and more reliable that a wireless WiFi connection.</p>
+			</div>
+		</div>
+
+		<div class="g-row">
+			<div class="g-30">
+				<img src="img/uni_netwrk1.png">
+			</div>
+			<div class="g-70 padded">
+				<h3>Security Camera</h3>
+				<p>These cameras run to create a safer school environment. These must be networked together (likely in a closed system) to be monitored from a central location.</p>
+			</div>
+		</div>
+
+	
+	</section>
+
+</body>
+
+</html>
